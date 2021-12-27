@@ -8,5 +8,3 @@
 
 ### 3. [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/tree/main/Solution/Level_1/%EC%88%AB%EC%9E%90%20%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC%20%EC%98%81%EB%8B%A8%EC%96%B4)
-
-
