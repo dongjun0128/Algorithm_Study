@@ -12,3 +12,6 @@
 ### 4. [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Solution/Level_1/%ED%82%A4%ED%8C%A8%EB%93%9C%20%EB%88%84%EB%A5%B4%EA%B8%B0/main.py)
 
+### 4. [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Solution/Level_1/%ED%81%AC%EB%A0%88%EC%9D%B8%20%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%20%EA%B2%8C%EC%9E%84/main.py)
+
