@@ -1,6 +1,6 @@
 # 파이썬 알고리즘 인터뷰
 ## 문자열 조작
-### 1.[유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/)
+### 1. [유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/)
 
 
 
