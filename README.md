@@ -22,8 +22,8 @@
 
 ## 
 
-### 1. [음료수 얼려 먹기]()
-* [풀이]()
+### 1. [음료수 얼려 먹기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0/%EB%AC%B8%EC%A0%9C.md)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0.py)
 
 # [프로그래머스](https://programmers.co.kr/)
 ## lv1
