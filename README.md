@@ -18,6 +18,13 @@
 ### 6. [가장 긴 팰린드롬 부분 문자열](https://leetcode.com/problems/longest-palindromic-substring/)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_Algorithm_Interview/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%A1%B0%EC%9E%91/6.%20%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%20%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4.py)
 
+# 이것이 코딩 테스트다
+
+## 
+
+### 1. [음료수 얼려 먹기]()
+* [풀이]()
+
 # [프로그래머스](https://programmers.co.kr/)
 ## lv1
 ### 1. [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
