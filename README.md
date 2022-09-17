@@ -27,8 +27,8 @@
 
 ## BFS
 
-### 1. [미로 탈출]()
-* [풀이]()
+### 1. [미로 탈출](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.md)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
 
 # [프로그래머스](https://programmers.co.kr/)
 ## lv1
