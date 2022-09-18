@@ -7,10 +7,10 @@ class Solution:
                 return
             
             #입력값 자릿수 단위 반복
-            for i in range(index,len(digits)) :
+            for idx in range(index,len(digits)) :
                 #숫자에 해당하는 모든 문자열 반복
-                for j in dic[digits[i]]:
-                    dfs(i+1,path+j)
+                for char in dic[digits[idx]]:
+                    dfs(idx+1,path+char)
                     
         if not digits:
             return []
