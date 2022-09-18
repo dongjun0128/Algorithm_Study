@@ -18,6 +18,24 @@
 ### 6. [가장 긴 팰린드롬 부분 문자열](https://leetcode.com/problems/longest-palindromic-substring/)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_Algorithm_Interview/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%A1%B0%EC%9E%91/6.%20%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC%20%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4.py)
 
+## 그래프
+
+### 1. [섬의 개수](https://leetcode.com/problems/number-of-islands/)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_Algorithm_Interview/%EA%B7%B8%EB%9E%98%ED%94%84/1.%20%EC%84%AC%EC%9D%98%20%EA%B0%9C%EC%88%98.py)
+
+### 2. [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+* [DFS](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_Algorithm_Interview/%EA%B7%B8%EB%9E%98%ED%94%84/2.%20%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%20%EB%AC%B8%EC%9E%90%20%EC%A1%B0%ED%95%A9(DFS).py)
+* [itertools](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_Algorithm_Interview/%EA%B7%B8%EB%9E%98%ED%94%84/2.%20%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%20%EB%AC%B8%EC%9E%90%20%EC%A1%B0%ED%95%A9(itertools).py)
+
+# 백준
+
+### [DFS와 BFS](https://www.acmicpc.net/problem/1260)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/1260.%20DFS%EC%99%80%20BFS.py)
+### [바이러스](https://www.acmicpc.net/problem/2606)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2606.%20%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.py)
+### [단지번호붙이기](https://www.acmicpc.net/problem/2667)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2667.%20%EB%8B%A8%EC%A7%80%EB%B2%88%ED%98%B8%EB%B6%99%EC%9D%B4%EA%B8%B0.py)
+
 # 이것이 코딩 테스트다
 
 ## DFS
