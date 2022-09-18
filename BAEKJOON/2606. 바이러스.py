@@ -28,4 +28,4 @@ def dfs(v):
 
 dfs(v)
 
-print(result)
+print(len(result))
