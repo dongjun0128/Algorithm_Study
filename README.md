@@ -35,6 +35,8 @@
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2606.%20%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.py)
 ### [단지번호붙이기](https://www.acmicpc.net/problem/2667)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2667.%20%EB%8B%A8%EC%A7%80%EB%B2%88%ED%98%B8%EB%B6%99%EC%9D%B4%EA%B8%B0.py)
+### [루머](https://www.acmicpc.net/problem/19538)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/19538.%20%EB%A3%A8%EB%A8%B8.py)
 
 # 이것이 코딩 테스트다
 
