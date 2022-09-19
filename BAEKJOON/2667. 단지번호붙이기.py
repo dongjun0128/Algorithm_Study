@@ -11,7 +11,7 @@ def dfs(x,y) :
 
         num = 1
 
-        #상,하,좌,우 모두 재귀적 호출
+        #상,하,좌,우에 있는 단지들 모두 더하기
         num+=dfs(x-1,y)
         num+=dfs(x,y-1)
         num+=dfs(x+1,y)
