@@ -67,4 +67,6 @@
 ### 5. [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Solution/Level_1/%ED%81%AC%EB%A0%88%EC%9D%B8%20%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%20%EA%B2%8C%EC%9E%84/main.py)
 
-
+##lv4
+### [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/81304)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Programmers/Level_4/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
