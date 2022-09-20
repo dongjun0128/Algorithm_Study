@@ -39,6 +39,8 @@
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/19538.%20%EB%A3%A8%EB%A8%B8.py)
 ### [타일 채우기](https://www.acmicpc.net/problem/2133)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2133.%20%ED%83%80%EC%9D%BC%20%EC%B1%84%EC%9A%B0%EA%B8%B0.py)
+### [방 탈출](https://www.acmicpc.net/problem/15729)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/15729.%20%EB%B0%A9%ED%83%88%EC%B6%9C.py)
 
 # 이것이 코딩 테스트다
 
