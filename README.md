@@ -41,6 +41,10 @@
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2133.%20%ED%83%80%EC%9D%BC%20%EC%B1%84%EC%9A%B0%EA%B8%B0.py)
 ### [방 탈출](https://www.acmicpc.net/problem/15729)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/15729.%20%EB%B0%A9%ED%83%88%EC%B6%9C.py)
+### [쌀 창고](https://www.acmicpc.net/problem/5821)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/5821.%20%EC%8C%80%20%EC%B0%BD%EA%B3%A0.py)
+### [토마토 (2차원배열)](https://www.acmicpc.net/problem/7576)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/7576.%20%ED%86%A0%EB%A7%88%ED%86%A0.py)
 
 # 이것이 코딩 테스트다
 
