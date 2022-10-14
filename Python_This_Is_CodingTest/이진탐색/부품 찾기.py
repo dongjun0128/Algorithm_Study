@@ -29,3 +29,14 @@ for target in x:
         print('yes',end=' ')
     else :
         print('no',end=' ')
+
+'''
+[input]
+5
+8 3 7 9 2 
+3
+5 7 9
+
+[ouput]
+no yes yes
+'''

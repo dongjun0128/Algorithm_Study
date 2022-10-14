@@ -26,3 +26,12 @@ n,m = map(int,input().split())
 array = list(map(int,input().split()))
 
 print(binary_search(array,m,0,max(array)))
+
+'''
+[input]
+4 6
+19 15 10 17
+
+[output]
+15
+'''
