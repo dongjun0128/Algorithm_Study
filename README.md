@@ -64,6 +64,11 @@
 ### 1. [미로 탈출](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.md)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
 
+## 이진탐색
+
+### 1.[부품 찾기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EB%B6%80%ED%92%88%20%EC%B0%BE%EA%B8%B0.py)
+### 2.[떡볶이 떡 만들기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EB%96%A1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.py)
+
 # [프로그래머스](https://programmers.co.kr/)
 ## lv1
 ### 1. [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
