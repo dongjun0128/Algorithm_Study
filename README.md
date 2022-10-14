@@ -45,6 +45,12 @@
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/5821.%20%EC%8C%80%20%EC%B0%BD%EA%B3%A0.py)
 ### [토마토 (2차원배열)](https://www.acmicpc.net/problem/7576)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/7576.%20%ED%86%A0%EB%A7%88%ED%86%A0.py)
+### [숨바꼭질](https://www.acmicpc.net/problem/1697)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/1697.%20%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88.py)
+### [수 찾기](https://www.acmicpc.net/problem/1920)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/1920.%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.py)
+### [미로 탐색](https://www.acmicpc.net/problem/2178)
+* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/BAEKJOON/2178.%20%EB%AF%B8%EB%A1%9C%20%ED%83%90%EC%83%89.py)
 
 # 이것이 코딩 테스트다
 
@@ -78,3 +84,4 @@
 ## lv4
 ### [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/81304)
 * [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Programmers/Level_4/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
+
