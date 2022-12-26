@@ -54,20 +54,27 @@
 
 # 이것이 코딩 테스트다
 
+## 그리디
+
 ## DFS
 
 ### 1. [음료수 얼려 먹기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0/%EB%AC%B8%EC%A0%9C.md)
-* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0.py)
+* [Python 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0/%EC%9D%8C%EB%A3%8C%EC%88%98%20%EC%96%BC%EB%A0%A4%EB%A8%B9%EA%B8%B0.py)
+* [Java 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/Java/src/DFSBFS/미로_탈출.java)
 
 ## BFS
 
 ### 1. [미로 탈출](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.md)
-* [풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
+* [Python 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C/%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C.py)
+* [Java 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/Java/src/DFSBFS/음료수_얼려_먹기.java)
 
 ## 이진탐색
 
 ### 1.[부품 찾기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EB%B6%80%ED%92%88%20%EC%B0%BE%EA%B8%B0.py)
-### 2.[떡볶이 떡 만들기](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EB%96%A1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.py)
+### 2. 떡볶이 떡 만들기
+* [Python 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89/%EB%96%A1%EB%B3%B6%EC%9D%B4%20%EB%96%A1%20%EB%A7%8C%EB%93%A4%EA%B8%B0.py)
+
+* [Java 풀이](https://github.com/dongjun0128/Algorithm_Study/blob/main/Python_This_Is_CodingTest/Java/src/이진탐색/떡볶이_떡_만들기.java)
 
 # [프로그래머스](https://programmers.co.kr/)
 ## lv1
