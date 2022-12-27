@@ -5,13 +5,15 @@ import org.testng.annotations.Test;
 
 public class 네트워크 {
 
+    boolean[] check;
+
     public int solution(int n, int[][] computers) {
         int answer = 0;
-        boolean[] check = new boolean[n]; // n 갯수만큼 boolean 배열을 만들고 모든 요소를 false로 초기화
+        check = new boolean[n]; // n 갯수만큼 boolean 배열을 만들고 모든 요소를 false로 초기화
 
         for (int i = 0; i < n; i++) {
-            if (!check[i]) {
-                dfs(computers, i, check);
+            if (check[i] == false) { // 방문하지 않은 네트워크이면 dfs 수행
+                dfs(computers, i);
                 answer++;
             }
         }
@@ -19,15 +21,14 @@ public class 네트워크 {
         return answer;
     }
 
-    boolean[] dfs(int[][] computers, int i, boolean[] check) {
+    public void dfs(int[][] computers, int i) {
         check[i] = true;
 
         for (int j = 0; j < computers.length; j++) {
             if (i != j && computers[i][j] == 1 && check[j] == false) {
-                check = dfs(computers, j, check);
+                dfs(computers, j);
             }
         }
-        return check;
     }
 
     @Test
