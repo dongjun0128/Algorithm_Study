@@ -11,7 +11,6 @@ public class 여행경로 {
     boolean[] visited;
 
     public String[] solution(String[][] tickets) {
-        answer = new String[tickets.length + 1];
         visited = new boolean[tickets.length];
         allRoute = new ArrayList<>();
 
