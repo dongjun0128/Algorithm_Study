@@ -21,7 +21,9 @@ public class 효율적인_화폐_구성 {
         // Dp 진행
         d[0] = 0;
 
+        // firstIndex는 각각의 화폐 단위를 의미
         for (int firstIndex = 0; firstIndex < n; firstIndex++) {
+            // secondIndex는 각각의 금액을 의미
             for (int secondIndex = arr[firstIndex]; secondIndex <= m; secondIndex++) {
                 // (firstIndex - k)원을 만드는 방법이 존재하는 경우
                 if (d[secondIndex - arr[firstIndex]] != 1001) {
