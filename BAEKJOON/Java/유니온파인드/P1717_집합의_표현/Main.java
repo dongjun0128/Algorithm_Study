@@ -32,7 +32,7 @@ public class Main {
             int b = Integer.parseInt(st.nextToken());
 
             if (command == 0){ // a가 포함되어 있는 집합과 b가 포함되어 있는 집합을 합친다
-                union(Math.min(a,b), Math.max(a,b));
+                union(a,b);
             } else{ //command == 1
                 // a와 b가 같은 집합인지 확인
                 int rootA = find(a);
@@ -44,9 +44,20 @@ public class Main {
         }
     }
 
+    static void init(){
+        parents = new int[N +1];
+
+        for (int n = 0; n <= N; n++) {
+            parents[n] = n;
+        }
+    }
+
     static void union(int a, int b){
-        int rootA = find(a);
-        int rootB = find(b);
+        int big = Math.max(a,b);
+        int small = Math.min(a,b);
+
+        int rootA = find(big);
+        int rootB = find(small);
 
         parents[rootA] = rootB;
     }
