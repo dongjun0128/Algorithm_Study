@@ -1,18 +1,78 @@
 package 삼성SW기출.달팽이_배열;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     static int N;
+    static boolean[] visited;
+    static ArrayList<Integer> list;
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
 
-        N = scanner.nextInt();
+        //N = scanner.nextInt();
 
-        outInArr();
-        inOutArr();
+        //outInArr();
+        //inOutArr();
+
+        list = new ArrayList<>();
+
+        for (int i = 1; i < 4; i++) {
+            list.add(i);
+        }
+
+        visited = new boolean[list.size()];
+
+        for (int i = 0; i < list.size(); i++) {
+            permutation(new ArrayList<>(), i, 1);
+        }
+    }
+
+    static void permutation(ArrayList<Integer> permu, int index, int depth) {
+        // 1. 체크 인
+        permu.add(list.get(index));
+        visited[index] = true;
+
+        // 2. 목적지인가?
+        if(depth == 3){
+            System.out.println(permu);
+        } else {
+            // 3. 연결된 곳 순회
+            for (int i = 0; i < list.size(); i++) {
+                if(visited[i] == false)
+                    permutation(permu,i,depth + 1);
+            }
+        }
+
+        // 6. 체크 아웃
+        permu.remove(depth - 1);
+        visited[index] = false;
+    }
+
+    static void combination(ArrayList<Integer> combi, int index, int depth) {
+        // 1. 체크 인
+        combi.add(list.get(index));
+        visited[index] = true;
+
+        // 2. 목적지인가?
+        if (depth == 4) {
+            System.out.println(combi);
+        } else {
+            // 3. 연결된 곳 순회
+            for (int i = index; i < list.size(); i++) {
+                if (visited[i] == false) {// 4. 갈 수 있는가?
+                    // 5. 간다.
+                    combination(combi, i, depth + 1);
+                }
+            }
+        }
+
+
+        // 6. 체크 아웃
+        visited[index] = false;
+        combi.remove(depth - 1);
     }
 
     static void outInArr() {
@@ -31,10 +91,10 @@ public class Main {
         while (true) {
             if (num > N * N) break;
 
-            if(direction % 2 == 0) {
+            if (direction % 2 == 0) {
                 int cnt = 0;
 
-                while(cnt++ < width) {
+                while (cnt++ < width) {
                     x = x + dx[direction];
                     y = y + dy[direction];
 
@@ -49,7 +109,7 @@ public class Main {
             } else {
                 int cnt = 0;
 
-                while(cnt++ < height) {
+                while (cnt++ < height) {
                     x = x + dx[direction];
                     y = y + dy[direction];
 
@@ -68,7 +128,7 @@ public class Main {
         }
     }
 
-    static void inOutArr(){
+    static void inOutArr() {
         int[][] map = new int[N][N];
 
         int[] dx = {0, 1, 0, -1};
@@ -85,16 +145,16 @@ public class Main {
 
         loop1:
         while (true) {
-            if(num > N * N) break;
+            if (num > N * N) break;
 
-            if(direction % 2 == 0) {
+            if (direction % 2 == 0) {
                 int cnt = 0;
 
-                while(cnt++ < width) {
+                while (cnt++ < width) {
                     x = x + dx[direction];
                     y = y + dy[direction];
 
-                    if(x < 0 || x >= N || y < 0 || x >= N) {
+                    if (x < 0 || x >= N || y < 0 || x >= N) {
                         break loop1;
                     }
 
@@ -110,7 +170,7 @@ public class Main {
                     x = x + dx[direction];
                     y = y + dy[direction];
 
-                    if(x < 0 || x >= N || y < 0 || x >= N) {
+                    if (x < 0 || x >= N || y < 0 || x >= N) {
                         break loop1;
                     }
 
