@@ -2,10 +2,42 @@ import java.util.*;
 
 
 public class Test {
+    static boolean[] visited;
     public static void main(String[] args) {
         //"2022.02.28"   ["A 23"]   ["2020.01.28 A"]   [1]
         ////"2020.01.02", ["A", 1], ["2020.01.02 A"], []
-        System.out.println(solution("2020.01.02",new String [] {"A 1"} , new String[] {"2020.01.02 A"}));
+        //System.out.println(solution("2020.01.02",new String [] {"A 1"} , new String[] {"2020.01.02 A"}));
+
+        int[] numbers = {6, 10, 2};
+        visited = new boolean[numbers.length];
+
+        for(int i = 0 ; i< numbers.length ; i++) {
+            dfs("", 1, i, numbers);
+        }
+    }
+
+    static public void dfs(String str, int depth, int index, int[] numbers) {
+        // 1. 체크 인
+        str += Integer.toString(numbers[index]);
+        visited[index] = true;
+
+        // 2. 목적지인가?
+        if(depth == numbers.length) {
+            System.out.println(str);
+        } else {
+            // 3. 연결된 곳 순회
+            for(int i = 0 ; i < numbers.length ; i++) {
+                // 4. 갈 수 있는가?
+                if(visited[i] == false) {
+                    // 5. 간다
+                    dfs(str,depth + 1 , i , numbers);
+                }
+            }
+        }
+
+        // 6. 체크아웃
+        str = str.substring(0,str.length() - Integer.toString(numbers[index]).length());
+        visited[index] = false;
     }
 
     static public int[] solution(String today, String[] terms, String[] privacies) {
