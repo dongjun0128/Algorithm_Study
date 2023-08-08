@@ -44,6 +44,11 @@ public class Main {
 
     }
 
+    public static int findd(int num) {
+        if(parents[num] == num) return num;
+        return parents[num] = findd(parents[num]);
+    }
+
     static void union(int a, int b) {
         int minValue = Math.min(a, b);
         int maxValue = Math.max(a, b);

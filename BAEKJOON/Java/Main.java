@@ -14,6 +14,10 @@ public class Main {
         map.put("aaa",2);
         System.out.println(map);
 
+        int[] arr = {1, 2, 3, 4};
+        test(arr);
+        System.out.println("arr = " + Arrays.toString(arr));
+
 //        int[] arr = {1, 3, 5, 7, 8};
 //        int sumArr = 8;
 //
@@ -26,6 +30,10 @@ public class Main {
 
         //System.out.println(solution(new int[] {93, 30, 55} , new int[] {1, 30, 5}));
         //System.out.println(solution(new int[] {95, 90, 99, 99, 80, 99} , new int[] {1, 1, 1, 1, 1, 1}));
+    }
+
+    static void test(int[] arr) {
+        arr[0] = 123;
     }
 
     static void dfs(boolean[] visited, int sum, int index, int sumArr, int[] arr, ArrayList<Integer> list, int depth) {
