@@ -2,12 +2,14 @@ package 삼성SW기출.달팽이_배열;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     static int N;
     static boolean[] visited;
     static ArrayList<Integer> list;
+    static List<List<Integer>> cntList;
 
     public static void main(String[] args) {
         //Scanner scanner = new Scanner(System.in);
@@ -18,16 +20,19 @@ public class Main {
         //inOutArr();
 
         list = new ArrayList<>();
+        cntList = new ArrayList<>();
 
-        for (int i = 1; i < 4; i++) {
+        for (int i = 1; i < 5; i++) {
             list.add(i);
         }
 
         visited = new boolean[list.size()];
 
         for (int i = 0; i < list.size(); i++) {
-            permutation(new ArrayList<>(), i, 1);
+            combination(new ArrayList<>(), i, 1);
         }
+
+        System.out.println(cntList.size());
     }
 
     static void permutation(ArrayList<Integer> permu, int index, int depth) {
@@ -38,6 +43,7 @@ public class Main {
         // 2. 목적지인가?
         if(depth == 3){
             System.out.println(permu);
+            cntList.add(permu);
         } else {
             // 3. 연결된 곳 순회
             for (int i = 0; i < list.size(); i++) {
@@ -59,6 +65,7 @@ public class Main {
         // 2. 목적지인가?
         if (depth == 4) {
             System.out.println(combi);
+            cntList.add(combi);
         } else {
             // 3. 연결된 곳 순회
             for (int i = index; i < list.size(); i++) {

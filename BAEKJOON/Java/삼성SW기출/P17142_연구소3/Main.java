@@ -69,7 +69,7 @@ public class Main {
 
         // 2. 목적지인가?
         if (depth == M) {
-            //System.out.println(combi);
+            System.out.println(combi);
             spreadVirus(originEmptySpace,combi);
         } else {
             // 3. 연결된 곳 순회
