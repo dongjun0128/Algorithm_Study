@@ -4,10 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     static int N;
@@ -31,7 +28,12 @@ public class Main {
             classTimeList.add(new Node(start, end));
         }
 
-        Collections.sort(classTimeList);
+        //Collections.sort(classTimeList);
+        classTimeList.sort((Node o1 , Node o2) -> {
+            int cmp1 = o1.end - o2.end;
+            if(cmp1 == 0) return o1.start - o2.start;
+            return cmp1;
+        });
 
         int start = 0;
         int end = 0;

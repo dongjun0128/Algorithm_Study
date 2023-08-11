@@ -5,18 +5,33 @@ public class Main {
 
     public static void main(String[] args) {
 
-        HashMap<String,Integer> map = new HashMap<>();
+        TreeSet<Integer> set = new TreeSet<>();
+        set.add(4);
+        set.add(2);
+        set.add(3);
+        set.add(4);
+        set.add(1);
 
-        map.put("aaa",1);
-        System.out.println(map);
-        map.remove("aaa");
-        System.out.println(map);
-        map.put("aaa",2);
-        System.out.println(map);
+        Iterator iter = set.iterator();
 
-        int[] arr = {1, 2, 3, 4};
-        test(arr);
-        System.out.println("arr = " + Arrays.toString(arr));
+        while(iter.hasNext()) {
+            System.out.println(iter.next());
+        }
+
+        System.out.println("set = " + set);
+
+//        HashMap<String,Integer> map = new HashMap<>();
+//
+//        map.put("aaa",1);
+//        System.out.println(map);
+//        map.remove("aaa");
+//        System.out.println(map);
+//        map.put("aaa",2);
+//        System.out.println(map);
+//
+//        int[] arr = {1, 2, 3, 4};
+//        test(arr);
+//        System.out.println("arr = " + Arrays.toString(arr));
 
 //        int[] arr = {1, 3, 5, 7, 8};
 //        int sumArr = 8;

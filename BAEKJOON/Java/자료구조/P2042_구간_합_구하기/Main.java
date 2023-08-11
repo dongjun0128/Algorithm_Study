@@ -31,7 +31,7 @@ public class Main {
         }
 
         init();
-        //System.out.println(Arrays.toString(tree));
+        System.out.println(Arrays.toString(tree));
 
         for (int i = 0; i < M + K; i++) {
             st = new StringTokenizer(br.readLine());
