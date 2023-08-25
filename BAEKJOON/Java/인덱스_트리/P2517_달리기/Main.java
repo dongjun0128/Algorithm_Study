@@ -4,62 +4,106 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
-    static class Runner{
-        int idx;
-        int skill;
-
-        public Runner(int idx, int talent) {
-            this.idx = idx;
-            this.skill = talent;
-        }
-    }
-
-    static int n;
+    static int N;
+    static List<Runner> runnerList;
+    static int S;
     static int[] tree;
-    public static void main(String[] args) throws IOException{
+
+    public static void main(String[] args) throws IOException {
         System.setIn(new FileInputStream("/Users/shindongjun/Desktop/Algorithm_Study/BAEKJOON/Java/인덱스_트리/P2517_달리기/input.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        n = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        List<Runner> runners = new ArrayList<>();
-        for(int i=0; i<n; i++) {
-            runners.add(new Runner(i, Integer.parseInt(br.readLine())));
+        N = Integer.parseInt(st.nextToken());
+
+        runnerList = new ArrayList<>(N);
+
+        for (int n = 0; n < N; n++) {
+            runnerList.add(new Runner(n + 1, Integer.parseInt(new StringTokenizer(br.readLine()).nextToken())));
         }
 
-        Collections.sort(runners, (a,b)-> (a.skill - b.skill));
-        for(int i=0; i<runners.size(); i++) {
-            Runner runner = runners.get(i);
-            runner.skill = i+1;
+        // 압축
+        Collections.sort(runnerList, (a, b) -> a.skill - b.skill); //skill에 대해 오름차순
+        for (int i = 0; i < N; i++) {
+            runnerList.get(i).skill = i + 1;
         }
-        Collections.sort(runners, (a,b)-> (a.idx - b.idx));
+        Collections.sort(runnerList, (a, b) -> a.index - b.index);
+
+        //System.out.println(runnerList);
+
+        init();
 
         StringBuilder sb = new StringBuilder();
-        tree = new int[n*4];
-        for(int i=1; i<=n; i++) {
-            int skill = runners.get(i-1).skill;
-            sb.append(i- query(1,n, 1, 1,skill) +"\n");
-            update(1,n,1, skill);
+
+        for (int i = 0; i < N; i++) {
+            Runner runner = runnerList.get(i);
+            sb.append(runner.index - query(1, runner.skill) + "\n");
+            update(runner.skill);
         }
         System.out.println(sb.toString());
     }
 
-    static int query(int s, int e, int node, int l, int r) {
-        if(e < l || r < s) return 0;
-        if(l <= s && e <= r) {
-            return tree[node];
+    public static void update(int index) {
+        index = S + index - 1;
+
+        tree[index]++;
+        index /= 2;
+
+        while (index > 0) {
+            tree[index] = tree[index * 2] + tree[index * 2 + 1];
+            index /= 2;
         }
-        int mid = (s+e)/2;
-        return query(s, mid, node*2, l, r) + query(mid+1, e, node*2+1, l, r);
     }
 
-    static int update(int s, int e, int node, int idx) {
-        if(idx < s || e < idx) return tree[node];
-        if(s == e)  {
-            return tree[node] += 1;
+    public static int query(int leftQuery, int rightQuery) {
+        int left = leftQuery + S - 1;
+        int right = rightQuery + S - 1;
+
+        int rank = 0;
+
+        while (left <= right) {
+            if (left % 2 == 1) {
+                rank += tree[left];
+                left++;
+            }
+
+            if (right % 2 == 0) {
+                rank += tree[right];
+                right--;
+            }
+
+            left /= 2;
+            right /= 2;
         }
-        int mid = (s+e)/2;
-        return tree[node] = update(s, mid, node*2, idx)+ update(mid+1, e, node*2+1, idx);
+
+        return rank;
     }
 
+    public static void init() {
+        S = 1;
+
+        while (S < N) {
+            S *= 2;
+        }
+
+        tree = new int[S * 2];
+    }
+}
+
+class Runner {
+    int index;
+    int skill;
+
+    public Runner(int index, int skill) {
+        this.index = index;
+        this.skill = skill;
+    }
+
+    @Override
+    public String toString() {
+        return "Runner{" +
+                "index=" + index +
+                ", skill=" + skill +
+                '}';
+    }
 }

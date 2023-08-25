@@ -22,6 +22,7 @@ public class Main {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
+
         memories = new int[N + 1];
         costs = new int[N + 1];
         dp = new int[N + 1][100000 + 1];
