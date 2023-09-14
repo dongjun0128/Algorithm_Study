@@ -43,6 +43,10 @@ public class test1 {
 
             X = nx;
             Y = ny;
+
+            HashMap<String, String> map = new HashMap<>();
+
+            map.put("asd", "asd");
         }
 
         return answer;
