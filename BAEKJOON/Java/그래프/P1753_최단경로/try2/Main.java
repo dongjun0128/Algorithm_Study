@@ -88,6 +88,13 @@ class Node implements Comparable<Node> {
         this.cost = cost;
     }
 
+    @Override
+    public String toString() {
+        return "Node{" +
+                "index=" + index +
+                ", cost=" + cost +
+                '}';
+    }
 
     @Override
     public int compareTo(Node o) {
