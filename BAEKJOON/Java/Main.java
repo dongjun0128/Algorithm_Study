@@ -4,21 +4,27 @@ public class Main {
     static HashMap<Integer, Integer> size = new HashMap<>();
 
     public static void main(String[] args) {
+        boolean prime[] = new boolean[121];
+        // 구하고자 하는 숫자 범위
+        int N = 120;
 
-        TreeSet<Integer> set = new TreeSet<>();
-        set.add(4);
-        set.add(2);
-        set.add(3);
-        set.add(4);
-        set.add(1);
+        // 소수는 false
+        // 1은 소수가 아니므로 제외
+        prime[0] = prime[1] = true;
 
-        Iterator iter = set.iterator();
-
-        while(iter.hasNext()) {
-            System.out.println(iter.next());
+        for(int i=2; i*i<=N; i++){
+            // prime[i]가 소수라면
+            if(!prime[i]){
+                // prime[j] 소수가 아닌 표시
+                for(int j=i*i; j<=N; j+=i) prime[j] = true;
+            }
         }
 
-        System.out.println("set = " + set);
+        // 소수 출력
+        for(int i=1; i<=N;i++){
+            if(!prime[i]) System.out.print(i+" ");
+        }
+
 
 //        HashMap<String,Integer> map = new HashMap<>();
 //
